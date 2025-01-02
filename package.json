@@ -9,6 +9,7 @@
     "preview": "nuxt preview",
     "postinstall": "nuxt prepare",
     "kysely": "kysely",
+    "db:migrate": "kysely migrate:latest",
     "db:migrate:up": "kysely migrate:up",
     "db:migrate:down": "kysely migrate:down",
     "db:seed": "kysely seed run"
