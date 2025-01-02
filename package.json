@@ -7,13 +7,23 @@
     "dev": "nuxt dev",
     "generate": "nuxt generate",
     "preview": "nuxt preview",
-    "postinstall": "nuxt prepare"
+    "postinstall": "nuxt prepare",
+    "kysely": "kysely",
+    "db:migrate:up": "kysely migrate:up",
+    "db:migrate:down": "kysely migrate:down",
+    "db:seed": "kysely seed run"
   },
   "dependencies": {
     "@nuxt/ui": "2.20.0",
+    "better-sqlite3": "^11.7.0",
+    "kysely": "^0.27.5",
     "nuxt": "^3.15.0",
     "vue": "latest",
     "vue-router": "latest"
   },
-  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321"
+  "packageManager": "pnpm@9.15.2+sha512.93e57b0126f0df74ce6bff29680394c0ba54ec47246b9cf321f0121d8d9bb03f750a705f24edc3c1180853afd7c2c3b94196d0a3d53d3e069d9e2793ef11f321",
+  "devDependencies": {
+    "@types/better-sqlite3": "^7.6.12",
+    "kysely-ctl": "^0.10.1"
+  }
 }
